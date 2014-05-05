@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/docs.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/pygments-manni.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/project.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylos/codecomparator.css">
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+    <script type="text/javascript" src="../assets/js/codecomparator.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div style="text-align: center;font-size: 12pt;color: black;background-color: lightblue;">Tiempo Restante: 20:05:10</div>
+    <h1 class="page-header">Laboratorio</h1>
+    <div class="row">
+        <div class="col-md-1">
+            <strong>Curso:</strong>
+        </div>
+        <div class="col-md-4">
+
+            <p>Algoritmica 1</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1">
+            <strong>Profesor:</strong>
+        </div>
+        <div class="col-md-4">
+
+            <p>Jorge Luis Chávez</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-1">
+            <strong>Estado: </strong>
+        </div>
+        <div class="col-md-4">
+
+            <p>Aun no enviado</p>
+        </div>
+    </div>
+
+    <div class="row highlight">
+        <div class="col-md-8">
+           <span class="btn btn-default btn-file">
+                Carga de Proyecto (.zip) <input type="file">
+           </span>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+    </div>
+    <br>
+    <button type="button" class="btn btn-danger btn-lg" style="text-align: center; margin-left:40%">Enviar Proyecto</button>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Asignar Código</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <label class="col-md-3 control-label">Código</label>
+                    <div class="col-md-5">
+                        <input class="form-control" >
+                    </div>
+                    <br>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

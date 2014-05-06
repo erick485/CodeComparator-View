@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/docs.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/pygments-manni.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/stylos/codecomparator.css">
+		<script type="text/javascript" src="../assets/js/jquery.js"></script>
+	<script type="text/javascript" src="../assets/js/bootstrap.js"></script>
+	<script type="text/javascript" src="../assets/js/codecomparator.js"></script>
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">CodeComparator</a>
+        </div>
+        <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+        	<li><a href="#">Inicio</a></li>
+        	<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Gestión <b class="caret"></b></a>
+                 <ul class="dropdown-menu">
+                                <li><a href="#">Alumno</a></li>
+                                
+                                <li><a href="#">Curso</a></li>
+                            </ul>
+        	</li>
+            <li><a href="#">Tomar Evaluacion</a></li>
+        	<li><a href="#">Configuracion Comparacion</a></li>
+        	<li><a href="#">Historiales</a></li>
+
+        </ul>
+         <ul class="nav navbar-nav navbar-right">
+         	
+         	<li class="dropdown">
+                  <a href="#" id="email" class="dropdown-toggle" data-toggle="dropdown">10200138@unmsm.edu.pe<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Configuracion</a></li>
+                                
+                                <li><a href="j_spring_security_logout">Cerrar Sesion</a></li>
+                            </ul>
+                        </li>
+         </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+	<div class="container">
+		<br>
+		<form class="form-horizontal ">
+		<div class="row form-group">
+		      <div class="col-md-6">
+			     <label class="col-md-5 control-label" style="margin-left: -31%;">Curso</label>
+			    <div class="col-md-4">
+				   <select class="form-control">
+                    <option>Seleccione Curso</option>
+                    <option>Algoritmica 1</option>
+                   </select>
+
+			</div>
+		</div> 		
+		</div>
+			<div class="row form-group">
+		       <div class="col-md-6">
+			     <label class="col-md-5 control-label" style="margin-left: -31%;">Grupo</label>
+			    <div class="col-md-3">
+				   <select class="form-control">
+                    <option>01</option>
+                    <option>02</option>
+                   </select>
+
+			</div>
+		</div> 		
+		</div>
+		
+		<h3 class="page-header">Registrar Alumno</h3>
+		<div class="highlight">
+			<div class="row form-group">
+			<div class="col-md-6">
+				<label class="col-md-5 control-label" >Codigo</label>
+				<div class="col-md-7">
+				<input type="text" class="form-control" >
+			</div>
+
+			</div>
+
+		</div>
+		<div class="row form-group">
+			 <div class="col-md-6">
+           	 <label class="col-md-5 control-label">Nombre</label>
+           	 <div class="col-md-7">
+           	 	<input type="text" class="form-control">
+           	 </div>
+           </div>
+           <div class="col-md-6">
+           	 <label class="col-md-5 control-label">Apellidos</label>
+           	 <div class="col-md-7">
+           	 	<input type="text" class="form-control">
+           	 </div>
+           </div>
+		</div>
+		<hr>
+		<div class="form-actions"  style="text-align: center;">
+            <button type="submit" class="btn btn-primary left" id="save_med">Guardar</button>
+            <button type="reset" class="btn btn-default left" id="cancel_med">Cancelar</button>
+        </div>
+		</div>
+		
+		</form>	
+		<br>
+		<table class="table table-bordered">
+			<thead>
+				<tr>
+					<th>Codigo</th>
+					<th>Nombre</th>
+					<th>Apellidos</th>
+					<th>Editar</th>
+					<th>Eliminar</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+                 <td>09200220</td>
+                 <td>Danilo</td>
+                 <td>Carranza Chiara</td>
+                 <td><a href="#" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-pencil"></span></a></td>
+                 <td><a href="#" class="btn  btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></a></td>
+				</tr>
+				<tr>
+                    <td>09200216</td>
+                    <td>Jorge</td>
+                    <td>Tello Gamarra</td>
+                 <td><a href="#" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-pencil"></span></a></td>
+
+                    <td><a href="#" class="btn  btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></a></td>
+				</tr>
+				<tr>
+                <td>09200223</td>
+                 <td>Carolina</td>
+                <td>Humamanzisa Gironda</td>
+                 <td><a href="#" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-pencil"></span></a></td>
+
+                <td><a href="#" class="btn  btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></a></td>
+				</tr>
+				<tr>
+                   <td>09200056</td> 
+                   <td>Jose</td>
+                   <td>Hinojoza Acevedo</td>
+                 <td><a href="#" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-pencil"></span></a></td>
+
+                   <td><a href="#" class="btn  btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></a></td>
+				</tr>
+				<tr>
+                   <td>09200230</td> 
+                   <td>Pamela</td>
+                   <td>Aqguirre Ayala</td>
+                 <td><a href="#" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-pencil"></span></a></td>
+
+                   <td><a href="#" class="btn  btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>

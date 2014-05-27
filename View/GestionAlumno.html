@@ -59,7 +59,7 @@
 			     <label class="col-md-5 control-label" style="margin-left: -31%;">Curso</label>
 			    <div class="col-md-4">
 				   <select class="form-control">
-                    <option>Seleccione Curso</option>
+                    <option>Programación</option>
                     <option>Algoritmica 1</option>
                    </select>
 
@@ -79,11 +79,11 @@
 		</div> 		
 		</div>
 		
-		<h3 class="page-header">Registrar Alumno</h3>
+		<h3 class="page-header">Registrar alumno</h3>
 		<div class="highlight">
 			<div class="row form-group">
 			<div class="col-md-6">
-				<label class="col-md-5 control-label" >Codigo</label>
+				<label class="col-md-5 control-label" >Código</label>
 				<div class="col-md-7">
 				<input type="text" class="form-control" >
 			</div>
@@ -98,20 +98,33 @@
            	 	<input type="text" class="form-control">
            	 </div>
            </div>
-           <div class="col-md-6">
-           	 <label class="col-md-5 control-label">Apellidos</label>
-           	 <div class="col-md-7">
-           	 	<input type="text" class="form-control">
-           	 </div>
-           </div>
+           
 		</div>
+    <div class="row form-group">
+       <div class="col-md-6">
+             <label class="col-md-5 control-label">Apellido paterno</label>
+             <div class="col-md-7">
+              <input type="text" class="form-control">
+             </div>
+           </div>
+           <div class="col-md-6">
+             <label class="col-md-5 control-label">Apellido materno</label>
+             <div class="col-md-7">
+              <input type="text" class="form-control">
+             </div>
+           </div>
+    </div>
 		<hr>
 		<div class="form-actions"  style="text-align: center;">
             <button type="submit" class="btn btn-primary left" id="save_med">Guardar</button>
             <button type="reset" class="btn btn-default left" id="cancel_med">Cancelar</button>
         </div>
+
 		</div>
 		
+        <div class="alert alert-success">
+   <strong style="display: block;text-align: center;">Registro exitoso</strong>
+    </div>
 		</form>	
 		<br>
 		<table class="table table-bordered">
@@ -129,8 +142,8 @@
                  <td>09200220</td>
                  <td>Danilo</td>
                  <td>Carranza Chiara</td>
-                 <td><a href="#" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-pencil"></span></a></td>
-                 <td><a href="#" class="btn  btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></a></td>
+                 <td><a href="#" class="btn btn-warning btn-xs" ><span class="glyphicon glyphicon-pencil"></span></a></td>
+                 <td><button  class="btn  btn-danger btn-xs" data-toggle="modal" data-target="#myModal" ><span class="glyphicon glyphicon-trash"></span></button></td>
 				</tr>
 				<tr>
                     <td>09200216</td>
@@ -138,7 +151,7 @@
                     <td>Tello Gamarra</td>
                  <td><a href="#" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-pencil"></span></a></td>
 
-                    <td><a href="#" class="btn  btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></a></td>
+                    <td><a href="#" class="btn  btn-danger btn-xs" ><span class="glyphicon glyphicon-trash"></span></a></td>
 				</tr>
 				<tr>
                 <td>09200223</td>
@@ -166,6 +179,24 @@
 				</tr>
 			</tbody>
 		</table>
+    
 	</div>
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Eliminar alumno</h4>
+            </div>
+            <div class="modal-body">
+                <p>¿Desea eliminar al alumno danilo?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" >Si</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
